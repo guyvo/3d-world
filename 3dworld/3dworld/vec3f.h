@@ -16,17 +16,14 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-/* File for "Collision Detection" lesson of the OpenGL tutorial on
- * www.videotutorialsrock.com
- */
 
-
+// basic 3D vector calc
+// candidate for template ???
 
 #ifndef VEC3F_H_INCLUDED
 #define VEC3F_H_INCLUDED
 
 #include <iostream>
-
 
 class Vec3f {
 	private:
@@ -60,14 +57,5 @@ class Vec3f {
 
 Vec3f operator*(float scale, const Vec3f &v);
 std::ostream &operator<<(std::ostream &output, const Vec3f &v);
-
-
-
-
-
-
-
-
-
 
 #endif

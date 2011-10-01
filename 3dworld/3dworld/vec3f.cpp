@@ -16,18 +16,11 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-/* File for "Collision Detection" lesson of the OpenGL tutorial on
- * www.videotutorialsrock.com
- */
-
-
 
 #include <math.h>
-
 #include "vec3f.h"
 
 using namespace std;
-
 
 Vec3f::Vec3f() {
 	
@@ -48,82 +41,84 @@ float Vec3f::operator[](int index) const {
 }
 
 Vec3f Vec3f::operator*(float scale) const {
-	return Vec3f(v[0] * scale, v[1] * scale, v[2] * scale);
+	return Vec3f(v[X] * scale, v[Y] * scale, v[Z] * scale);
 }
 
 Vec3f Vec3f::operator/(float scale) const {
-	return Vec3f(v[0] / scale, v[1] / scale, v[2] / scale);
+	return Vec3f(v[X] / scale, v[Y] / scale, v[Z] / scale);
 }
 
 Vec3f Vec3f::operator+(const Vec3f &other) const {
-	return Vec3f(v[0] + other.v[0], v[1] + other.v[1], v[2] + other.v[2]);
+	return Vec3f(v[X] + other.v[X], v[Y] + other.v[Y], v[Z] + other.v[Z]);
 }
 
 Vec3f Vec3f::operator-(const Vec3f &other) const {
-	return Vec3f(v[0] - other.v[0], v[1] - other.v[1], v[2] - other.v[2]);
+	return Vec3f(v[X] - other.v[X], v[Y] - other.v[Y], v[Z] - other.v[Z]);
 }
 
 Vec3f Vec3f::operator-() const {
-	return Vec3f(-v[0], -v[1], -v[2]);
+	return Vec3f(-v[X], -v[Y], -v[Z]);
 }
 
 const Vec3f &Vec3f::operator*=(float scale) {
-	v[0] *= scale;
-	v[1] *= scale;
-	v[2] *= scale;
+	v[X] *= scale;
+	v[Y] *= scale;
+	v[Z] *= scale;
 	return *this;
 }
 
 const Vec3f &Vec3f::operator/=(float scale) {
-	v[0] /= scale;
-	v[1] /= scale;
-	v[2] /= scale;
+	v[X] /= scale;
+	v[Y] /= scale;
+	v[Z] /= scale;
 	return *this;
 }
 
 const Vec3f &Vec3f::operator+=(const Vec3f &other) {
-	v[0] += other.v[0];
-	v[1] += other.v[1];
-	v[2] += other.v[2];
+	v[X] += other.v[X];
+	v[Y] += other.v[Y];
+	v[Z] += other.v[Z];
 	return *this;
 }
 
 const Vec3f &Vec3f::operator-=(const Vec3f &other) {
-	v[0] -= other.v[0];
-	v[1] -= other.v[1];
-	v[2] -= other.v[2];
+	v[X] -= other.v[X];
+	v[Y] -= other.v[Y];
+	v[Z] -= other.v[Z];
 	return *this;
 }
 
 float Vec3f::magnitude() const {
-	return sqrt(v[0] * v[0] + v[1] * v[1] + v[2] * v[2]);
+	return sqrt(magnitudeSquared());
 }
 
 float Vec3f::magnitudeSquared() const {
-	return v[0] * v[0] + v[1] * v[1] + v[2] * v[2];
+	return v[X] * v[X] + v[Y] * v[Y] + v[Z] * v[Z];
 }
 
 Vec3f Vec3f::normalize() const {
-	float m = sqrt(v[0] * v[0] + v[1] * v[1] + v[2] * v[2]);
-	return Vec3f(v[0] / m, v[1] / m, v[2] / m);
+	float m = magnitude();
+	return Vec3f(v[X] / m, v[Y] / m, v[Z] / m);
 }
 
 float Vec3f::dot(const Vec3f &other) const {
-	return v[0] * other.v[0] + v[1] * other.v[1] + v[2] * other.v[2];
+	return v[X] * other.v[X] + v[Y] * other.v[Y] + v[Z] * other.v[Z];
 }
 
 Vec3f Vec3f::cross(const Vec3f &other) const {
-	return Vec3f(v[1] * other.v[2] - v[2] * other.v[1],
-				 v[2] * other.v[0] - v[0] * other.v[2],
-				 v[0] * other.v[1] - v[1] * other.v[0]);
+	return Vec3f(v[Y] * other.v[Z] - v[Z] * other.v[Y],
+				 v[Z] * other.v[X] - v[X] * other.v[Z],
+				 v[X] * other.v[Y] - v[Y] * other.v[X]);
 }
 
+// no class member because of different type in operator
 Vec3f operator*(float scale, const Vec3f &v) {
 	return v * scale;
 }
 
+// no class member because of different type in operator
 ostream &operator<<(ostream &output, const Vec3f &v) {
-	cout << '(' << v[0] << ", " << v[1] << ", " << v[2] << ')';
+	cout << '(' << v[Vec3f::X] << ", " << v[Vec3f::Y] << ", " << v[Vec3f::Z] << ')';
 	return output;
 }
 
