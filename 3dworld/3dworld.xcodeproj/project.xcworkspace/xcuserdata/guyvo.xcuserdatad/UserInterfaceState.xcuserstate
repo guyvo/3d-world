@@ -1078,7 +1078,7 @@
 			</dict>
 		</dict>
 		<string>file://localhost/Users/guyvo/3d-world/3dworld/3dworld.xcodeproj/</string>
-		<real>339195195.68532699</real>
+		<real>339195241.70093298</real>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -2067,7 +2067,7 @@
 				</dict>
 			</array>
 		</dict>
-		<real>339195195.68569702</real>
+		<real>339195195.75371498</real>
 		<string>{0, 666}</string>
 		<dict>
 			<key>$class</key>
@@ -3704,7 +3704,7 @@
 				<integer>347</integer>
 			</dict>
 		</dict>
-		<real>339195195.68629497</real>
+		<real>339195241.70257699</real>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -5587,7 +5587,7 @@
 				</dict>
 				<dict>
 					<key>CF$UID</key>
-					<integer>493</integer>
+					<integer>491</integer>
 				</dict>
 			</array>
 		</dict>
@@ -5624,28 +5624,8 @@
 				<integer>36</integer>
 			</dict>
 			<key>NS.objects</key>
-			<array>
-				<dict>
-					<key>CF$UID</key>
-					<integer>491</integer>
-				</dict>
-			</array>
+			<array/>
 		</dict>
-		<dict>
-			<key>$class</key>
-			<dict>
-				<key>CF$UID</key>
-				<integer>61</integer>
-			</dict>
-			<key>NS.objects</key>
-			<array>
-				<dict>
-					<key>CF$UID</key>
-					<integer>492</integer>
-				</dict>
-			</array>
-		</dict>
-		<string>3dworld</string>
 		<dict>
 			<key>$class</key>
 			<dict>
@@ -5654,6 +5634,10 @@
 			</dict>
 			<key>NS.objects</key>
 			<array>
+				<dict>
+					<key>CF$UID</key>
+					<integer>492</integer>
+				</dict>
 				<dict>
 					<key>CF$UID</key>
 					<integer>494</integer>
@@ -5674,7 +5658,26 @@
 			<array>
 				<dict>
 					<key>CF$UID</key>
-					<integer>492</integer>
+					<integer>493</integer>
+				</dict>
+				<dict>
+					<key>CF$UID</key>
+					<integer>116</integer>
+				</dict>
+			</array>
+		</dict>
+		<string>3dworld</string>
+		<dict>
+			<key>$class</key>
+			<dict>
+				<key>CF$UID</key>
+				<integer>61</integer>
+			</dict>
+			<key>NS.objects</key>
+			<array>
+				<dict>
+					<key>CF$UID</key>
+					<integer>493</integer>
 				</dict>
 			</array>
 		</dict>
@@ -5688,7 +5691,7 @@
 			<array>
 				<dict>
 					<key>CF$UID</key>
-					<integer>492</integer>
+					<integer>493</integer>
 				</dict>
 				<dict>
 					<key>CF$UID</key>
