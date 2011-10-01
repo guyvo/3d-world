@@ -7,6 +7,7 @@
 //
 
 #include <iostream>
+#include <GLUT/GLUT.h>
 
 int main (int argc, const char * argv[])
 {

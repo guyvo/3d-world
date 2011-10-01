@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		8E8588D71437A6900099A1E6 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E8588D61437A6900099A1E6 /* main.cpp */; };
 		8E8588D91437A6900099A1E6 /* _dworld.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8E8588D81437A6900099A1E6 /* _dworld.1 */; };
+		8E8588E01437AB6D0099A1E6 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8588DF1437AB6D0099A1E6 /* OpenGL.framework */; };
+		8E8588E21437AB780099A1E6 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8588E11437AB780099A1E6 /* GLUT.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +30,8 @@
 		8E8588D21437A6900099A1E6 /* 3dworld */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 3dworld; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E8588D61437A6900099A1E6 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		8E8588D81437A6900099A1E6 /* _dworld.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = _dworld.1; sourceTree = "<group>"; };
+		8E8588DF1437AB6D0099A1E6 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		8E8588E11437AB780099A1E6 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +39,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E8588E21437AB780099A1E6 /* GLUT.framework in Frameworks */,
+				8E8588E01437AB6D0099A1E6 /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +50,8 @@
 		8E8588C71437A6900099A1E6 = {
 			isa = PBXGroup;
 			children = (
+				8E8588E11437AB780099A1E6 /* GLUT.framework */,
+				8E8588DF1437AB6D0099A1E6 /* OpenGL.framework */,
 				8E8588D51437A6900099A1E6 /* 3dworld */,
 				8E8588D31437A6900099A1E6 /* Products */,
 			);
