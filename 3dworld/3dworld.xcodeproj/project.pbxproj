@@ -104,6 +104,9 @@
 /* Begin PBXProject section */
 		8E8588C91437A6900099A1E6 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
 			buildConfigurationList = 8E8588CC1437A6900099A1E6 /* Build configuration list for PBXProject "3dworld" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -212,6 +215,7 @@
 				8E8588DE1437A6900099A1E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
