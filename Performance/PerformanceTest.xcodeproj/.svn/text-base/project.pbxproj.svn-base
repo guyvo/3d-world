@@ -1,0 +1,239 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8E1DF22013F6CEA900943ED3 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E1DF21F13F6CEA900943ED3 /* main.c */; settings = {COMPILER_FLAGS = "-save-temps"; }; };
+		8E1DF22213F6CEA900943ED3 /* PerformanceTest.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8E1DF22113F6CEA900943ED3 /* PerformanceTest.1 */; };
+		8E82CE3113F7D724008F9BB6 /* increment.s in Sources */ = {isa = PBXBuildFile; fileRef = 8E82CE3013F7D724008F9BB6 /* increment.s */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8E1DF21913F6CEA900943ED3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				8E1DF22213F6CEA900943ED3 /* PerformanceTest.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8E1DF21B13F6CEA900943ED3 /* PerformanceTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PerformanceTest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E1DF21F13F6CEA900943ED3 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		8E1DF22113F6CEA900943ED3 /* PerformanceTest.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = PerformanceTest.1; sourceTree = "<group>"; };
+		8E82CE3013F7D724008F9BB6 /* increment.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = increment.s; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8E1DF21813F6CEA900943ED3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8E0C266613F7D75800BD6E5A /* assembler */ = {
+			isa = PBXGroup;
+			children = (
+				8E82CE3013F7D724008F9BB6 /* increment.s */,
+			);
+			name = assembler;
+			sourceTree = "<group>";
+		};
+		8E1DF21013F6CEA800943ED3 = {
+			isa = PBXGroup;
+			children = (
+				8E0C266613F7D75800BD6E5A /* assembler */,
+				8E1DF21E13F6CEA900943ED3 /* PerformanceTest */,
+				8E1DF21C13F6CEA900943ED3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8E1DF21C13F6CEA900943ED3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E1DF21B13F6CEA900943ED3 /* PerformanceTest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E1DF21E13F6CEA900943ED3 /* PerformanceTest */ = {
+			isa = PBXGroup;
+			children = (
+				8E1DF21F13F6CEA900943ED3 /* main.c */,
+				8E1DF22113F6CEA900943ED3 /* PerformanceTest.1 */,
+			);
+			path = PerformanceTest;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8E1DF21A13F6CEA900943ED3 /* PerformanceTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E1DF22513F6CEA900943ED3 /* Build configuration list for PBXNativeTarget "PerformanceTest" */;
+			buildPhases = (
+				8E1DF21713F6CEA900943ED3 /* Sources */,
+				8E1DF21813F6CEA900943ED3 /* Frameworks */,
+				8E1DF21913F6CEA900943ED3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PerformanceTest;
+			productName = PerformanceTest;
+			productReference = 8E1DF21B13F6CEA900943ED3 /* PerformanceTest */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8E1DF21213F6CEA800943ED3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0410;
+			};
+			buildConfigurationList = 8E1DF21513F6CEA800943ED3 /* Build configuration list for PBXProject "PerformanceTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8E1DF21013F6CEA800943ED3;
+			productRefGroup = 8E1DF21C13F6CEA900943ED3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8E1DF21A13F6CEA900943ED3 /* PerformanceTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8E1DF21713F6CEA900943ED3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E1DF22013F6CEA900943ED3 /* main.c in Sources */,
+				8E82CE3113F7D724008F9BB6 /* increment.s in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8E1DF22313F6CEA900943ED3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				"GCC_ENABLE_SSE3_EXTENSIONS[arch=*]" = YES;
+				GCC_ENABLE_SSE41_EXTENSIONS = YES;
+				GCC_ENABLE_SSE42_EXTENSIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8E1DF22413F6CEA900943ED3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_ENABLE_SSE41_EXTENSIONS = YES;
+				GCC_ENABLE_SSE42_EXTENSIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8E1DF22613F6CEA900943ED3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				"GCC_ENABLE_SSE3_EXTENSIONS[arch=*]" = YES;
+				GCC_ENABLE_SSE41_EXTENSIONS = YES;
+				GCC_ENABLE_SSE42_EXTENSIONS = YES;
+				GCC_VERSION = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8E1DF22713F6CEA900943ED3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_ENABLE_SSE41_EXTENSIONS = YES;
+				GCC_ENABLE_SSE42_EXTENSIONS = YES;
+				GCC_VERSION = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8E1DF21513F6CEA800943ED3 /* Build configuration list for PBXProject "PerformanceTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E1DF22313F6CEA900943ED3 /* Debug */,
+				8E1DF22413F6CEA900943ED3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E1DF22513F6CEA900943ED3 /* Build configuration list for PBXNativeTarget "PerformanceTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E1DF22613F6CEA900943ED3 /* Debug */,
+				8E1DF22713F6CEA900943ED3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8E1DF21213F6CEA800943ED3 /* Project object */;
+}
